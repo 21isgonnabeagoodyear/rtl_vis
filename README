@@ -1,0 +1,13 @@
+this reads data from a rtl2832 dongle using rtl-sdr and plots the DFT using gnuplot
+
+requirements:
+rtl-sdr (library and headers)
+fftw3 (library and headers)
+gnuplot (if you want plotting)
+
+building:
+Run "make" to build.  
+running:
+"make plotdft" will build (if necessary) and run gnuplot with the appropriate arguments.  For some reason zooming doesn't seem to work when not running gnuplot in repl mode.  Samples are written to test.dat, DFT (skipping the first component) is written to testdft.dat.
+tuning:
+Edit the line starting with verbose_set_frequency to the frequency in hertz and rebuild.  We suckless now.

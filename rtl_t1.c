@@ -1,3 +1,4 @@
+//this is not affiliated with the rtl-sdr project, but uses their library and helper code
 #include "rtl-sdr.h"
 #include "convenience/convenience.h"
 #include <stdio.h>
